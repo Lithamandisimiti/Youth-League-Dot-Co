@@ -1,0 +1,182 @@
+.header-modal{
+	text-align: center;
+	height: auto !important;
+	background-color: rgb(242,242,242);
+}
+
+.header-modal h1{
+	font-size: 4vw;
+	font-family: "Lato";
+	font-weight: 100;
+	margin-top: 15%;
+}
+@media screen and (max-width: 768px){
+    .header-modal h1{
+    	font-size: 8vw;
+    }
+}
+
+#btn-submit{
+	width: 100px;
+}
+
+.input-container{
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 15%;
+}
+
+.credentials{
+	width: 80%;
+	margin-bottom: 40px;
+}
+.modal-body{
+	padding-bottom: 80px;
+	background-color: rgb(242,242,242);
+}
+
+.register{
+	margin-top: 30px;
+}
+
+.commentsClass{
+	margin:auto;
+	width: 90%;
+	height: auto;
+}
+
+#user_comment{
+margin:auto;
+}
+
+#user_comment object{
+	margin-top: 10px;
+	width: 65px;
+	height: 50px;
+	float: left;
+	padding-right: 15px;
+}
+#comments{ /*remove later*/
+	margin:auto; width: 85%; height: auto;
+}
+
+#user_comment img{
+	width: 65px;
+	height: 100%;
+	padding-left: 0px !important;
+}
+
+#comment{
+	padding-left: 6px;
+}
+
+#userinput_comment{
+	width: 90%;
+	margin: auto;
+  margin-bottom: 10px;
+}
+
+#userinput_comment object{
+	margin-top: 10px;
+	width: 65px;
+	height: 50px;
+	float: left;
+}
+
+#userinput_comment img{
+	width: 65px;
+	height: 100%;
+	padding-left: 0px !important;
+}
+#comment_input{
+	margin-top: 1vw;
+	/*width: auto;*/
+}
+
+.postContainer{
+	width: 100%;
+	/*margin-left: 15vw;
+	margin-right:15vw;*/
+	height: 80vh;
+	display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.blog-item-title-wrapper{
+    width:100%;
+}
+.videoBlock{
+      height: 350px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+    }
+    .audioBlock{
+      height: 350px;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .whiteMask{
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+      background-color: rgba(255,255,255,.6);
+    }
+    .videoBlock video{
+      width: 100%;
+      height: 100% !important;
+    }
+		.videoBlock source{
+      width: 100%;
+      height: 150% !important;
+    }
+    .audioWave{
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+			min-height: 100px;
+    }
+    .audioControls{
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+    .audioControls button{
+      height: 90px;
+      width: 90px;
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 6.5em;
+      padding: 0;
+      border: none;
+      outline: none;
+			color: black !important;
+    }
+		.audioControls button:hover{
+				color: black !important;
+		}
+
+    .smaller{
+      font-size: 2em !important;
+      width: 60px !important;
+    }
+    .ion-stop, .ion-ios-refresh-outline{
+      font-size: 1.5em !important;
+    }
+.note{
+  font-weight: 12px;
+}
+.note a{
+  color: #636363;
+  display: inline;
+}
+.note a:hover{
+  color: #D3D3D3;
+}

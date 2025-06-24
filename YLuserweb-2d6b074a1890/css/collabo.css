@@ -1,0 +1,191 @@
+.request-collab{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  overflow: hidden;
+}
+#btn-make-request{
+  float: right;
+}
+
+/********************************************************/
+/**********************Collab Modal**********************/
+/********************************************************/
+.active{
+  display: block !important;
+}
+#request-collab-form{
+  padding: 10px;
+}
+#request-collab-form .cat-list{
+  margin-bottom: 20px;
+}
+#request-collab-form .cat-list select{
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+}
+#request-collab-form .cat-list select:focus{
+  outline: none;
+  border: 1px solid #757a86;
+}
+#request-collab-form .cat-list option:hover{
+  background-color: #d3d3d3;
+  box-shadow: 0 0 10px 100px #1882A8 inset;
+}
+#request-collab-form .collaborators{
+  display: none;
+}
+#request-collab-form .collaborators legend{
+  margin-bottom: 10px;
+}
+#request-collab-form .search-button{
+  width: 50px;
+}
+#request-collab-form .collaborators li{
+  list-style-type: none;
+  padding: 5px;
+}
+#request-collab-form .collaborators .searchList{
+  position: absolute;
+  display: none;
+  z-index: 5;
+  background-color: white;
+  width: 100%;
+}
+#request-collab-form .collaborators .artist-list{
+  margin-top: 10px;
+  padding: 0;
+}
+#request-collab-form .collaborators .collaborator{
+  background-color: gray;
+  border-radius: 50px;
+  padding: 10px;
+  padding-left: 20;
+  margin-bottom: 10px;
+}
+#request-collab-form .collaborators .collaborator p{
+  margin: 0;
+  padding-right: 5px;
+}
+#request-collab-form .collaborators .collaborator span{
+  font-size: 30px;
+  float: right;
+}
+#request-collab-form .collaborators .collaborator span:hover{
+    cursor: pointer;
+}
+/********************************************************/
+/**********************Collab Item***********************/
+/********************************************************/
+#collab-items{
+  width: 100%;
+  position: relative;
+}
+.collabo-item h1{
+  background-color: #d3d3d3;
+  padding: 4px;
+  padding-left: 10px;
+}
+.collabo-item a.btn{
+  border-radius: 50px;
+  border: 2px solid black;
+}
+.artists{
+  padding: 10px;
+}
+.artists a{
+  font-size: 25px;
+  padding: 10px;
+}
+.artists ul{
+  list-style-type: none;
+  margin-bottom: 0;
+}
+.artists li{
+  display: inline;
+}
+.collab-response{
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+.collab-response div{
+  display: block;
+  position: relative;
+}
+.collab-response div a{
+  width: auto;
+  align-content: center;
+  text-align: center;
+}
+/********************************************************/
+/**********************Rating Stars**********************/
+/********************************************************/
+div.stars {
+  height: 25px;
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  margin-left: 2px;
+}
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  color: #444;
+  padding: 5px;
+  margin: 0px;
+}
+.fiveStar{
+  color: black;
+  text-shadow: 0 0 20px #0c0c17;
+}
+label.star:hover { 
+  transform: rotate(15deg) scale(1.3); 
+}
+/*******************************************************/
+/*********************View Project**********************/
+/*******************************************************/
+#viewProjectModal .modal-header{
+	height: 100px;
+}
+#viewProjectModal .modal-header h1{
+	font-size: 5vw;
+	overflow-x: hidden;
+	margin-top: 0;
+	max-height: 100%;
+}
+@media screen and (max-width: 768px){
+	#viewProjectModal .modal-header h1{
+		font-size: 7vw;
+	}
+}
+#viewProjectModal .modal-body{
+	padding: 0;
+}
+#viewProjectModal .modal-project-cover{
+	max-height: 300px;
+	overflow-y: hidden;
+	margin-bottom: 10px;
+}
+#viewProjectModal .modal-project-cover img{
+	width: 100%;
+}
+/**time line**/
+#timeline h3{
+    padding-left: 5px;
+}
+#timeline .time-stamp{
+	width: 100%;
+	padding: 0px 10px 10px 10px;
+	margin-left: 10px;
+	border-left: 2px dashed black;
+	border-bottom: 1px solid #d3d3d3;
+	overflow-y: hidden;
+}
+#timeline .time-stamp img{
+	width: 50%;
+	height: 100%;
+	float: right;
+}

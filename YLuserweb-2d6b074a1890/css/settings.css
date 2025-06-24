@@ -1,0 +1,48 @@
+.input-field{
+    margin-bottom:25px;
+}
+#page-start .panel{
+	margin-bottom: 0px !important;
+	cursor:pointer;
+}
+#page-start .panel form button{
+	align-self: center;
+}
+#Privacy-settings .input{
+	margin-bottom: 10px;
+}
+#Blocking-settings .search-wrap{
+	margin-bottom: 10px;
+}
+#Blocking-settings .blocked-users a{
+	float: right;
+}
+/********************************************************/
+/********************Block user Modal********************/
+/********************************************************/
+#Search-results .row > div{
+	padding: 0px;
+}
+#Search-results .search-user-image{
+	padding: 0px;
+}
+#Search-results .search-user-image img{
+	width: 100%;
+}
+#Search-results .list-group-item{
+	overflow: auto;
+}
+
+.settings-error{
+    text-align:center;
+    color:red;
+    display:none;
+}
+.settings-success{
+    text-align:center;
+    color:green;
+    display:none;
+}
+.blocked-users .list-group .list-group-item{
+    text-transform:capitalize;
+}

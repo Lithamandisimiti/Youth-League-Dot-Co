@@ -1,0 +1,83 @@
+/*******************************************************/
+/************************Gallary************************/
+/*******************************************************/
+.img-container{
+	padding: 2px;
+}
+.gallary-img{
+	height: 200px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin: 2px;*/
+}
+.gallary-img img{
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%;
+	scale: 0.5;
+}
+.gallary-img:hover{
+	border: 2px solid black;
+}
+.more-imgs{
+	text-align: center;
+	color: black;
+	font-size: 20px;
+}
+
+/*image modal*/
+#viewMedia .modal-content{
+	height: 100%;
+}
+#viewMedia .modal-content{
+	background-color: rgba(0,0,0,0.9);
+}
+#viewMedia .media-display img{
+	/*image size*/
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	/*center*/
+	display: block;
+	margin: auto;
+	vertical-align: center;
+}
+#viewMedia .left:hover{
+	background-color: rgba(211, 211, 211,0.1);
+}
+#viewMedia .right:hover{
+	background-color: rgba(211, 211, 211,0.1);
+}
+#viewMedia .close{
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	z-index: 2;
+	width: 50px;
+	text-align: center;
+	right: 0;
+}
+#viewMedia .close:hover{
+	background-color: white;
+	color: black;
+}
+.carousel-parent{
+	height: 100%;
+}
+#myCarousel{
+	height: 100%;
+}
+#myCarousel .media-display{
+	height: 100%;
+	padding: 5px;
+}
+#myCarousel .img-Display{
+	height: 100%;
+}
+#myCarousel .carousel-control{
+	height: 80%;
+	top: 10%;
+}

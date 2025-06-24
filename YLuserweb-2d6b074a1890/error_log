@@ -1,0 +1,27 @@
+[19-Aug-2017 16:38:11 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/project-cover-upload.php on line 16
+[19-Aug-2017 16:53:09 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/project-cover-upload.php on line 16
+[19-Aug-2017 17:01:33 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/project-cover-upload.php on line 17
+[19-Aug-2017 17:10:30 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/project-cover-upload.php on line 20
+[19-Aug-2017 17:14:28 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 17:18:16 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 17:26:30 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:08:51 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:09:26 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:10:24 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:14:56 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:18:43 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:34:44 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:36:06 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 18:43:24 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 19:13:07 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 21:24:52 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[19-Aug-2017 22:37:13 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[20-Aug-2017 23:43:24 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/gszbhbao/youthleague.co/beta/upload.php on line 20
+[07-Sep-2017 23:36:03 UTC] PHP Warning:  file_put_contents() expects at least 2 parameters, 1 given in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 8
+[07-Sep-2017 23:50:54 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
+[07-Sep-2017 23:53:36 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
+[07-Sep-2017 23:59:43 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
+[08-Sep-2017 00:55:39 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
+[08-Sep-2017 00:55:39 UTC] PHP Notice:  Array to string conversion in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 6
+[08-Sep-2017 00:57:02 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
+[08-Sep-2017 00:58:55 UTC] PHP Notice:  Undefined index: user-number in /home/gszbhbao/youthleague.co/beta/removeuser.php on line 2
