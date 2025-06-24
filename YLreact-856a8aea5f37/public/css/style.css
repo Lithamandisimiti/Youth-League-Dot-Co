@@ -1,0 +1,65 @@
+/*@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900");
+/*@import url("./loader.css");*/
+/*@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900%7COpen+Sans:300,400,600,700")*/
+
+body {
+    color: #0c0c17;
+    font: 300 14px/21px 'Lato', 'Open Sans', sans-serif, Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    /*min-height: 260px;*/
+    max-height: 515px;
+    object-fit: cover;
+    display: block;
+}
+
+.vid-play {
+  margin-top: -0.5em;
+  margin-left: -0.3em;
+  top: 50%;
+  font-size: 7em;
+  color: #FFFFFF;
+  position: absolute;
+  /*position: relative;*/
+}
+
+
+.a-nav { color: rgba(0,0,0,.5); }
+.a-nav-active { color: #0c0c17; }
+a { text-decoration: none; }
+
+.form-control:focus {
+	border-color: inherit;
+    -webkit-box-shadow: none;
+  	box-shadow: none;
+  	/*text-align: left !important;*/
+}
+
+.rh { height: 8em }
+.gallery-tile-p { padding: 0.05rem !important }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	.rh { height: 9em }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	.rh { height: 11em }
+	.gallery-tile-p { padding: 0.05rem !important }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	.rh { height: 11.5em }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	.rh { height: 13em }
+}

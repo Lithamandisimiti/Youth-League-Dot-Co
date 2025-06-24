@@ -1,0 +1,23 @@
+.profile-image{
+	height: 6rem;
+    width: 6rem;
+}
+
+.profile-dot {
+	font-weight: 900;
+}
+
+.profile-name{
+	font-size: 2.571em;
+}
+
+.bottom-space {
+	margin-bottom: 10px;
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	.profile-image{
+		height: 13em;
+        width: 13em;
+	}
+}

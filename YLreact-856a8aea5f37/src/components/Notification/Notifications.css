@@ -1,0 +1,58 @@
+.notifications-holder{
+    margin: auto;
+}
+
+.notifications-holder .notification-line{
+    display: flex;
+    flex-direction: row;
+    align-content: auto;
+    margin-bottom: 5px;
+    cursor:pointer;
+}
+.notifications-holder .notification-line .notification-profile{
+    width: 70px;
+    height: 70px;
+}
+.notifications-holder .notification-line .notification-details-holder{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-left: 10px;
+}
+.notifications-holder .notification-line .notification-details-holder .notification-details-times-holder{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-style: italic;
+    font-size: 10px;
+    justify-content: space-between;
+}
+.notifications-holder .notification-line .notification-details-holder .notification-details-times-holder .notification-details-date{
+    align-self:flex-start;
+    text-align: left;
+}
+.notifications-holder .notification-line .notification-details-holder .notification-details-times-holder .notification-details-time{
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 5px;
+}
+.notifications-holder .notifications-view-all-holder{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor:pointer;
+}
+.notifications-holder .notifications-view-all{
+    border-top: 0.5px solid #969696;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.notifications-holder .notifications-none{
+    border-bottom: 0.5px solid #969696;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}

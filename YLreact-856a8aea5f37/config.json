@@ -1,0 +1,7 @@
+{
+  "development": {
+    "nodeURI": "http://localhost:2048",
+    "phpURI": "http://localhost/yl-php-backend/"
+  },
+  "production": {}
+}

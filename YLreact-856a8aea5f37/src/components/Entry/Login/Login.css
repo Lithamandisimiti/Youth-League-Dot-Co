@@ -1,0 +1,24 @@
+.login{
+	margin-top: 20vh;
+}
+
+.controls{
+    margin-top: 10px;
+    margin-bottom: 22vh;
+}
+.controls button{
+    width: 60%;
+}
+.forgot-password{
+    right: 0px;
+    float: right;
+}
+.forgot-password-div::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+.remember-me{
+    width: auto;
+    float: left;
+}

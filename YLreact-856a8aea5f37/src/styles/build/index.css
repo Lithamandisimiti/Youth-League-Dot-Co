@@ -1,0 +1,303 @@
+@xs-min : 480px;
+@sm-min : 768px;
+@md-min : 992px;
+@lg-min : 1200px;
+@xs-max : (@sm-min - 1);
+@sm-max : (@md-min - 1);
+@md-max : (@lg-min - 1);
+@phone :          ~"only screen and (min-width: @{xs-min})";
+@phone-strict :   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet :         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict :  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop :        ~"only screen and (min-width: @{md-min})";
+@desktop-strict : ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large :          ~"only screen and (min-width: @{lg-min})";
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -160px; } }
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -160px; } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -160px; } }
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    top: -160px; }
+  100% {
+    opacity: 0;
+    top: -180px; } }
+
+@-moz-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    top: -160px; }
+  100% {
+    opacity: 0;
+    top: -180px; } }
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    top: -160px; }
+  100% {
+    opacity: 0;
+    top: -180px; } }
+
+#Music {
+  margin: 0;
+  left: 0;
+  width: 480px;
+  height: 320px;
+  display: none; }
+  #Music * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    color: #141414; }
+    #Music *:focus {
+      outline: none; }
+  #Music #container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #141414; }
+    #Music #container #image {
+      width: 100%;
+      height: 220px;
+      background: #000;
+      background-image: url("https://www.theedgesusu.co.uk/wp-content/uploads/2016/03/Kendrick-Lamar-Skyrockets-to-Top-of-Artist-100-FDRMX.jpg");
+      background-size: cover;
+      background-position: 0px -30px;
+      background-repeat: no-repeat;
+      position: relative; }
+      #Music #container #image::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: -moz-linear-gradient(top, rgba(20, 20, 20, 0) 21%, rgba(20, 20, 20, 0.27) 42%, #141414 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(20, 20, 20, 0) 21%, rgba(20, 20, 20, 0.27) 42%, #141414 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(20, 20, 20, 0) 21%, rgba(20, 20, 20, 0.27) 42%, #141414 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+      #Music #container #image h1 {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px 0 2px 15px; }
+      #Music #container #image p {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left: 15px; }
+    #Music #container #player {
+      position: absolute;
+      top: 185px;
+      left: 160px; }
+      #Music #container #player .fa-backward,
+      #Music #container #player .fa-forward {
+        float: left;
+        font-size: 1.8em;
+        padding: 20px 0;
+        color: white;
+        cursor: pointer; }
+        #Music #container #player .fa-backward:hover,
+        #Music #container #player .fa-forward:hover {
+          color: #4c4c4c; }
+      #Music #container #player #play-pause {
+        float: left;
+        font-size: 4.5em;
+        margin: 0 20px;
+        width: 65px;
+        height: 65px;
+        text-align: center;
+        background: transparent;
+        padding: 0;
+        cursor: pointer; }
+        #Music #container #player #play-pause #play {
+          color: white; }
+          #Music #container #player #play-pause #play:hover {
+            color: #4c4c4c; }
+    #Music #container #volume {
+      width: 20px;
+      position: absolute;
+      bottom: 70px;
+      left: 15px;
+      cursor: pointer; }
+      #Music #container #volume .fa-volume-up {
+        font-size: 1em;
+        color: white;
+        -webkit-filter: drop-shadow(0px 2px 2px #000);
+        filter: drop-shadow(0px 2px 2px #000);
+        position: relative; }
+        #Music #container #volume .fa-volume-up:hover {
+          color: #4c4c4c; }
+      #Music #container #volume #vol {
+        opacity: 0;
+        -webkit-animation: fadeOutUp ease-in 1;
+        -moz-animation: fadeOutUp ease-in 1;
+        animation: fadeOutUp ease-in 1;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-duration: 0.4s;
+        -moz-animation-duration: 0.4s;
+        animation-duration: 0.4s;
+        width: 23px;
+        height: 130px;
+        background: #141414;
+        position: absolute;
+        top: -160px;
+        left: -2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px;
+        padding: 10px 10px;
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.5); }
+        #Music #container #volume #vol::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          bottom: -5px;
+          left: 6px;
+          background-color: #141414;
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        #Music #container #volume #vol.active {
+          -webkit-animation: fadeInDown ease-in 1;
+          -moz-animation: fadeInDown ease-in 1;
+          animation: fadeInDown ease-in 1;
+          -webkit-animation-fill-mode: forwards;
+          -moz-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+          -webkit-animation-duration: 0.4s;
+          -moz-animation-duration: 0.4s;
+          animation-duration: 0.4s; }
+        #Music #container #volume #vol #go {
+          width: 3px;
+          height: 100%;
+          background: white;
+          /* Old browsers */
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px;
+          position: relative; }
+          #Music #container #volume #vol #go::before {
+            content: "";
+            width: 100%;
+            height: 22px;
+            background-color: #4c4c4c;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            border-radius: 5px; }
+          #Music #container #volume #vol #go::after {
+            content: "";
+            width: 9px;
+            height: 9px;
+            background-color: white;
+            position: absolute;
+            top: 20px;
+            left: -3px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            border-radius: 50px;
+            -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+            -moz-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5); }
+    #Music #container #settings {
+      position: absolute;
+      bottom: 70px;
+      right: 15px; }
+      #Music #container #settings #repeat {
+        font-size: 1em;
+        width: 15px;
+        text-align: center;
+        color: white;
+        margin-left: 15px;
+        cursor: pointer; }
+        #Music #container #settings #repeat:hover {
+          color: #4c4c4c; }
+        #Music #container #settings #repeat.active {
+          color: #4c4c4c; }
+    #Music #container #lenght {
+      width: 100%;
+      height: 2px;
+      margin-top: 60px;
+      background-color: #4c4c4c; }
+      #Music #container #lenght #this {
+        width: 10%;
+        float: left;
+        height: 100%;
+        background: white;
+        position: relative; }
+        #Music #container #lenght #this::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%;
+          position: absolute;
+          top: -4px;
+          right: 0;
+          background: white;
+          -webkit-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+          -moz-box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.5);
+          cursor: pointer; }
+
+#Media {
+  position: fixed;
+  background-color: white;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  width: 75px;
+  height: 75px;
+  z-index: 10;
+  transition: all .3s !important;
+  padding: 0 !important;
+  overflow: hidden; }
+  #Media:hover {
+    width: auto;
+    height: auto; }
+  #Media:hover #Music {
+    display: block; }

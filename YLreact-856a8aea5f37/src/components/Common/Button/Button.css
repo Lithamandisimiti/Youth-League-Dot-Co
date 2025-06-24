@@ -1,0 +1,47 @@
+.btn{
+    border-radius: 20px;
+    min-width: 70px;
+    padding: 5px;
+    outline: 0;
+}
+.btn:focus{
+    border: none;
+    outline: 0;
+}
+.btn-black{
+    background-color: #000000;
+    border: none;
+    color: white;
+    outline: 0;
+}
+.btn.btn-text {
+  background-color: transparent;
+  border-radius: 0;
+}
+.btn.btn-text:hover{
+  text-decoration: underline;
+}
+.btn.btn-text:active,
+.btn.btn-text:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.btn.btn-text {
+  font-weight: 300;
+}
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+  outline: 0;
+}
+.ripple:hover {
+  background: #323232 radial-gradient(circle, transparent 1%, #323232 1%) center/15000%;
+  outline: 0;
+}
+.ripple:active {
+  background-color: #666666;
+  background-size: 100%;
+  transition: background 0s;
+  outline: 0;
+}

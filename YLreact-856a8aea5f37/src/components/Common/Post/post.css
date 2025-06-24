@@ -1,0 +1,125 @@
+.post {
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.post-footer p {
+  margin: 2%;
+  float: left;
+  font-size: 1.1em;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.post-footer p span {
+  font-size: 1.3em;
+  margin-right: 3px;
+}
+
+.post-footer::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.post-footer {
+  padding-left: 3%;
+  background-color: #f3f3f3;
+}
+
+.comment-input {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-left: 5%;
+  display: flex;
+}
+
+.comment-input span {
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-input input {
+  border: none;
+  border: 2px solid #f3f3f3;
+  border-radius: 15px !important;
+}
+
+.comment-input * {
+  float: left;
+}
+
+.comment-input::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.post-desc {
+  border-bottom: 1px solid #f3f3f3;
+  margin-top: 1%;
+  padding-bottom: 2%;
+}
+.post-desc h2 {
+  float: left;
+}
+
+.post-desc::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.post-desc p {
+  margin: 0;
+  padding-top: 2%;
+  font-size: 1.1em;
+  float: left;
+}
+
+.post-desc h2 {
+  font-weight: 300;
+}
+
+.post-comments {
+  margin-top: 2%;
+}
+.post-comments p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.post-comments hr {
+  width: 60%;
+}
+
+.post-comments p b {
+  font-size: 1.1em;
+}
+
+.more-comments {
+  margin-right: 15%;
+}
+
+.more-comments span {
+  letter-spacing: -1px;
+  word-spacing: -0.1px;
+  color: #737373;
+  cursor: pointer;
+  float: right;
+}
+
+.more-comments span:hover {
+  text-decoration: underline;
+  color: #706f83;
+}
+
+.more-comments::after {
+  content: '';
+  clear: both;
+  display: table;
+}

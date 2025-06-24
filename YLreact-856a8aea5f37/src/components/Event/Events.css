@@ -1,0 +1,49 @@
+.events-container{
+    margin: auto;    
+}
+
+.events-container .event-block{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.events-container .event-block .event-poster-holder{
+    display: flex;
+    justify-content: center;    
+    justify-items: center;    
+    align-items: center;  
+    overflow: hidden;  
+}
+.events-container .event-block .event-poster-holder .event-poster{
+    align-self: center;
+    max-width: 500px;
+}
+.events-container .event-block .event-details-holder{
+    text-align: center;   
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+.events-container .event-block .event-details-holder .event-detail{
+    /* color: #969696; */
+    color: black;
+    font-size: 1.1rem;
+    align-self: center;
+    margin-bottom: 8px;
+}
+.events-container .event-block .event-details-holder .event-detail span{
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+.events-container .event-block .event-details-holder .heading{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.events-container .event-block .event-details-holder .event-buttons-holder{    text-align: center;   
+    display: flex;
+    align-content: center;
+    justify-content: center; 
+}

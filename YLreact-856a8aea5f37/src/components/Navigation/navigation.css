@@ -1,0 +1,57 @@
+.mobile-im-v {
+  display: initial;
+}
+
+.desktop-im-v {
+  display: none;
+}
+
+.fixed-padding-top {
+  padding-top: 4.3em;
+}
+
+.desktop-search {
+  display: none;
+}
+
+.sign-up {
+  width: 50vw;
+}
+
+.auth {
+  margin-top: 15px;
+}
+
+#login {
+  font-size: 1.4em;
+  padding: 2px;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .mobile-im-v {
+    display: none;
+  }
+
+  .desktop-im-v {
+    display: initial;
+  }
+
+  .desktop-im-v-flex {
+    display: flex;
+  }
+
+  .fixed-padding-top {
+    padding-top: 6.3em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .desktop-search {
+    display: initial;
+  }
+
+  .hide-search {
+    display: none;
+  }
+}

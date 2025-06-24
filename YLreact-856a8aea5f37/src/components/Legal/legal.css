@@ -1,0 +1,8 @@
+.page-content{
+    padding: 25px;
+}
+.page-content h2,
+.page-content h4{
+    padding-top: 60px;
+    margin-top: -60px;
+}
