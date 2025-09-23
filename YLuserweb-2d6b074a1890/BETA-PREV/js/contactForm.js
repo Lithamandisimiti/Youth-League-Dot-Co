@@ -32,20 +32,30 @@ $(function () {
         $("#btn-submit").addClass("btn-loading");
 
 
-        // Serialize the form data.
-        var formData = $(form).serialize();
+        // Build JSON from the form
+        var formData = {};
+        $(form).serializeArray().forEach(function (f) { formData[f.name] = f.value; });
 
-        // Submit the form using AJAX.
+        // Submit the form using AJAX as JSON
+        var endpoint = $(form).attr('action');
+        if (window.API_BASE_URL) {
+            // If a full API base is configured, prefix endpoints when they start with /api/
+            if (endpoint.indexOf('/api/') === 0) {
+                endpoint = window.API_BASE_URL + endpoint;
+            }
+        }
         $.ajax({
                 type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
+                url: endpoint,
+                data: JSON.stringify(formData),
+                contentType: 'application/json',
+                dataType: 'json'
             })
             .done(function (response) {
                 // Make sure that the formMessages div has the 'success' class.
                 $(formMessages).removeClass('error').addClass('success').fadeIn().delay(5000).fadeOut();
                 // Set the message text.
-                $(formMessages).text(response);
+                $(formMessages).text(response && response.message ? response.message : 'Success');
 
                 // Clear the form.
                 $(form).trigger("reset");
@@ -55,7 +65,9 @@ $(function () {
                 // Make sure that the formMessages div has the 'error' class.
                 $(formMessages).removeClass('success').addClass('error').fadeIn().delay(5000).fadeOut();
                 // Set the message text.
-                if (data.responseText !== '') {
+                if (data.responseJSON && data.responseJSON.error) {
+                    $(formMessages).text(data.responseJSON.error);
+                } else if (data.responseText) {
                     $(formMessages).text(data.responseText);
                 } else {
                     $(formMessages).text('Oops! An error occured and your message could not be sent.');
