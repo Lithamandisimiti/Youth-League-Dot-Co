@@ -265,8 +265,12 @@
                     </div>-->
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10">
-                            <form id="ajax-contact" name="signupF" class="" method="post" action="mailer.php" style="border: 2px solid black; padding: 10px; border-radius: 5px;">
+                            <form name="collab" class="" method="post" action="/success.html" data-netlify="true" data-netlify-honeypot="bot-field" style="border: 2px solid black; padding: 10px; border-radius: 5px;">
                                 <fieldset>
+                                    <input type="hidden" name="form-name" value="collab">
+                                    <p style="display:none;">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    </p>
                                     <div class="row">
                                         <div class="input col-xs-12 col-sm-6 padding-bottom-xs-50 padding-bottom-50">
                                             <div class="media comment-item">

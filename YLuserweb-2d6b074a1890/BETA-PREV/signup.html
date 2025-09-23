@@ -248,8 +248,12 @@
                     </div>-->
                     <div class="row">
                         <div class="col-md-offset-1 col-md-10">
-                            <form id="ajax-contact" name="signupF" class="" method="post" action="mailer.php">
+                            <form name="signup" class="" method="post" action="/success.html" data-netlify="true" data-netlify-honeypot="bot-field">
                                 <fieldset>
+                                    <input type="hidden" name="form-name" value="signup">
+                                    <p style="display:none;">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                    </p>
                                     <div class="row">
                                         <div class="input col-xs-12 col-sm-6 padding-bottom-xs-50 padding-bottom-50">
                                             <label class="input-label" for="name">
